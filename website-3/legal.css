@@ -1,0 +1,70 @@
+/* Legal pages — simple readable layout */
+.legal-body {
+    background: var(--bg-dark);
+    color: var(--on-dark);
+    overflow: auto;
+    min-height: 100vh;
+}
+
+.legal-body #header {
+    position: sticky;
+    top: 0;
+    background: rgba(8, 17, 28, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.legal-main {
+    padding: 140px 24px 80px;
+    display: flex;
+    justify-content: center;
+}
+.legal-inner {
+    max-width: 880px;
+    width: 100%;
+}
+.legal-inner h1 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    margin-bottom: 32px;
+    color: var(--on-dark);
+}
+.legal-inner h2 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+    margin-top: 48px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(244, 241, 234, .15);
+}
+.legal-inner p {
+    font-size: 1.02rem;
+    line-height: 1.75;
+    margin-bottom: 16px;
+    color: var(--on-dark);
+    max-width: 70ch;
+}
+.legal-inner strong { color: var(--on-dark); }
+.legal-inner a {
+    color: var(--gold-soft);
+    border-bottom: 1px solid transparent;
+    transition: border-color .25s var(--ease);
+}
+.legal-inner a:hover { border-color: var(--gold-soft); }
+
+.back-link {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(244, 241, 234, .1);
+}
+.back-link a {
+    color: var(--gold-soft);
+    font-size: 13px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+}
